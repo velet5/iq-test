@@ -31,7 +31,7 @@ class Server(port: Port, counter: Counter) extends Directives with Server.JsonSu
   private implicit val executionContext: ExecutionContext = scala.concurrent.ExecutionContext.Implicits.global
 
   private val route: Route =
-    path("stats") {
+    path("stat") {
       get(complete(counter.size().map(_.toString)))
     } ~
     path("user") {
