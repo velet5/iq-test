@@ -34,3 +34,14 @@ some notes:
 - backups are never removed, unless server is run with "--clean" argument
 
 - redis is not favorable option, 'cause its perfomance is worse than naive "syncronized immutable set" approach (maybe 'cause i'm doing it wrong)
+
+
+---
+
+redis
+
+I had no previous experience with Redis. So i just run it with docker like "sudo docker run -p 3333:6379 redis"
+
+The persistence between restarts is implied to work via redis fsync. (have no idea how to configure it)
+
+
