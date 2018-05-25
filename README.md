@@ -6,9 +6,13 @@ just my test assignment
 command line options:
 
 --port	HTTP port to serve requests on, default is 8080
+
 --backup-dir	Directory to store backups, default is /tmp/userIds
+
 --clean	Removes all existing backups in specified backup directory
+
 --redis	Uses redis-server for persistance. Needs a port
+
 --help	Print help message and exit
 
 
